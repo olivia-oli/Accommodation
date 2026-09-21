@@ -1,0 +1,525 @@
+.body {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  background-color: black;
+}
+.logo {
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+  position: relative;
+  left: 50px;
+  top: 20px;
+  border-radius: 15px;
+}
+.logo img {
+  width: 120px;
+  display: block;
+}
+.nav-link {
+  text-decoration: none;
+  color: white;
+  text-align: center;
+  justify-content: center;
+  position: relative;
+  right: 250px;
+  margin: 10px;
+}
+
+.nav-link1 {
+  text-decoration: none;
+  color: white;
+  text-align: center;
+  justify-content: center;
+  position: relative;
+  left: 1300px;
+  margin: 10px;
+}
+
+.menu-button {
+  border-radius: 15px;
+  cursor: pointer;
+  position: absolute;
+  right: 20px;
+  margin-bottom: 0px;
+}
+.header {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+}
+.header-right {
+  display: flex;
+  margin-left: auto;
+  align-items: center;
+  gap: 20px;
+}
+.welcome-user_1{
+  color:#ffffff
+}
+/* =========================
+   SEARCH BAR
+========================= */
+
+.header-bottom {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 25px;
+}
+
+.header-search {
+  width: 90%;
+  max-width: 700px;
+  min-height: 10px;
+
+  display: flex;
+  align-items: center;
+
+  background: #ffffff;
+  border: 1px solid #dddddd;
+  border-radius: 50px;
+
+  padding: 8px 10px 8px 25px;
+
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+/* =========================
+   SEARCH SECTIONS
+========================= */
+
+.search-where,
+.search-checkin,
+.search-checkout,
+.search-who {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  padding: 0 25px;
+
+  border-right: 1px solid #dddddd;
+
+  min-height: 50px;
+}
+
+.search-where {
+  flex: 1.2;
+}
+
+.search-checkin,
+.search-checkout {
+  flex: 1;
+}
+
+.search-who {
+  flex: 0.9;
+}
+
+/* =========================
+   LABELS
+========================= */
+
+.search-where p,
+.search-checkin p,
+.search-checkout p,
+.search-who p {
+  margin: 0 0 6px 0;
+
+  font-size: 12px;
+  font-weight: 700;
+
+  color: #222222;
+}
+
+/* =========================
+   LOCATION SELECT
+========================= */
+
+.search-input select {
+  width: 100%;
+
+  border: none;
+  outline: none;
+
+  background: transparent;
+
+  font-size: 14px;
+  color: #666666;
+
+  cursor: pointer;
+}
+
+.search-input select:focus {
+  outline: none;
+}
+
+/* =========================
+   DATE PICKER
+========================= */
+
+.date-picker {
+  width: 100%;
+
+  border: none;
+  outline: none;
+
+  background: transparent;
+
+  font-size: 14px;
+  color: #666666;
+
+  cursor: pointer;
+}
+
+.date-picker::placeholder {
+  color: #666666;
+}
+
+/* =========================
+   GUEST BUTTON
+========================= */
+
+.search-button {
+  border: none;
+  background: transparent;
+
+  padding: 0;
+
+  font-size: 14px;
+  color: #666666;
+
+  cursor: pointer;
+
+  text-align: left;
+}
+
+.search-button:hover {
+  color: #222222;
+}
+
+/* =========================
+   SEARCH ICON BUTTON
+========================= */
+
+.search-icon-button {
+  width: 55px;
+  height: 55px;
+
+  margin-left: 12px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: none;
+  border-radius: 50%;
+
+  background: #ff385c;
+  color: white;
+
+  cursor: pointer;
+
+  transition: 0.2s ease;
+}
+
+.search-icon-button:hover {
+  transform: scale(1.05);
+}
+
+.search-icon-button svg {
+  font-size: 26px;
+}
+
+/* =========================
+   GUEST POPUP
+========================= */
+
+.guest-popup {
+  position: absolute;
+
+  margin-top: 130px;
+
+  right: 250px;
+
+  background: white;
+
+  padding: 20px;
+
+  border-radius: 15px;
+
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.15);
+
+  z-index: 1000;
+}
+
+.guest-selector {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+/* =========================
+   GUEST BUTTONS
+========================= */
+
+.guest-button {
+  width: 5px;
+  height: 5px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid #dddddd;
+  border-radius: 50%;
+
+  background: white;
+
+  cursor: pointer;
+}
+
+.guest-button:hover {
+  border-color: #222222;
+}
+
+/* =========================
+   GUEST NUMBER
+========================= */
+
+.guest-input {
+  width: 35px;
+
+  text-align: center;
+
+  border: none;
+  outline: none;
+
+  font-size: 16px;
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 768px) {
+  .header-search {
+    width: 95%;
+
+    flex-direction: column;
+
+    border-radius: 25px;
+
+    padding: 15px;
+  }
+
+  .search-where,
+  .search-checkin,
+  .search-checkout,
+  .search-who {
+    width: 100%;
+
+    border-right: none;
+    border-bottom: 1px solid #eeeeee;
+
+    padding: 15px 10px;
+  }
+
+  .search-icon-button {
+    width: 100%;
+    height: 45px;
+
+    border-radius: 20px;
+
+    margin: 15px 0 0 0;
+  }
+
+  .guest-popup {
+    position: relative;
+
+    margin: 10px 0 0 0;
+
+    right: auto;
+  }
+}
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.welcome-user {
+  font-size: 14px;
+  font-weight: 600;
+  color: #222;
+}
+
+.host-menu-container {
+  position: relative;
+}
+
+.host-button {
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.host-menu {
+  position: absolute;
+  top: 45px;
+  left: 1200px;
+  width: 230px;
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.18);
+  z-index: 100;
+}
+
+.host-menu p {
+  margin: 0 0 15px;
+  font-size: 14px;
+  color: #555;
+}
+
+.host-menu button {
+  width: 100%;
+  padding: 11px;
+  border: none;
+  border-radius: 7px;
+  background: #222;
+  color: white;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.host-menu button:hover {
+  background: #444;
+}
+
+/* Responsive layout overrides */
+.container {
+  width: 100%;
+  padding: 18px 24px 28px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 16px;
+  box-sizing: border-box;
+}
+
+.logo {
+  position: static;
+  flex-shrink: 0;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+  margin-left: auto;
+}
+
+nav-link,
+nav-link1 {
+  position: static;
+  margin: 0;
+}
+
+.menu-button {
+  position: static;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin: 0;
+}
+
+.header-right {
+  margin-left: 0;
+}
+
+.header-bottom {
+  order: 3;
+  flex: 0 0 100%;
+  margin-top: 8px;
+}
+
+.guest-popup {
+  right: 24px;
+}
+
+.host-menu {
+  left: auto;
+  right: 0;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 14px 16px 20px;
+    gap: 14px;
+  }
+
+  .logo img {
+    width: 96px;
+  }
+
+  .nav,
+  .welcome-user {
+    display: none;
+  }
+
+  .header-right {
+    margin-left: auto;
+    gap: 10px;
+  }
+
+  .host-button {
+    font-size: 13px;
+  }
+
+  .header-search {
+    width: 100%;
+  }
+}
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.nav-link1,
+.welcome-user {
+  margin: 0;
+  font-size: 15px;
+  color: white;
+}
+
+.nav-link1 {
+  cursor: pointer;
+}
+
+.welcome-user {
+  font-weight: 600;
+}
+
+@media (max-width: 420px) {
+  .host-button {
+    display: none;
+  }
+
+  .header-search {
+    padding: 10px;
+  }
+
+  .search-where,
+  .search-checkin,
+  .search-checkout,
+  .search-who {
+    padding: 10px 8px;
+  }
+}

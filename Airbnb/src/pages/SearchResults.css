@@ -1,0 +1,216 @@
+
+/* =========================
+   SEARCH RESULTS
+========================= */
+
+.search-results {
+  width: 90%;
+  max-width: 1100px;
+  margin: 40px auto;
+}
+
+.search-results h1 {
+  font-size: 30px;
+  margin-bottom: 25px;
+}
+
+.search-results h2 {
+  margin: 35px 0 20px;
+}
+
+
+/* =========================
+   SEARCH SUMMARY
+========================= */
+
+.search-summary {
+  display: flex;
+  gap: 25px;
+
+  padding: 20px;
+
+  border: 1px solid #dddddd;
+  border-radius: 12px;
+
+  background: #fff;
+}
+
+.search-summary p {
+  margin: 0;
+  font-size: 14px;
+}
+
+
+/* =========================
+   PLACES
+========================= */
+
+.places {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+
+/* =========================
+   PLACE CARD
+========================= */
+
+.place-card {
+  display: flex;
+
+  width: 100%;
+  min-height: 230px;
+
+  border: 1px solid #dddddd;
+  border-radius: 15px;
+
+  overflow: hidden;
+
+  background: white;
+
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+
+  transition: 0.2s ease;
+}
+
+.place-card:hover {
+  box-shadow: 0 5px 18px rgba(0, 0, 0, 0.15);
+}
+
+
+/* =========================
+   IMAGE
+========================= */
+
+.place-image {
+  position: relative;
+
+  width: 35%;
+  min-width: 300px;
+}
+
+.place-image img {
+  width: 100%;
+  height: 100%;
+
+  display: block;
+
+  object-fit: cover;
+}
+
+
+/* =========================
+   HEART
+========================= */
+
+.heart-button {
+  position: absolute;
+
+  top: 15px;
+  right: 15px;
+
+  width: 40px;
+  height: 40px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: none;
+  border-radius: 50%;
+
+  background: white;
+
+  cursor: pointer;
+
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+
+  z-index: 2;
+}
+
+.heart-button svg {
+  font-size: 21px;
+  color: #222;
+}
+
+.heart-button:hover {
+  transform: scale(1.08);
+}
+
+
+/* =========================
+   INFORMATION
+========================= */
+
+.place-info {
+  position: relative;
+
+  flex: 1;
+
+  padding: 25px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.place-info h3 {
+  margin: 0 0 12px;
+
+  font-size: 20px;
+}
+
+.place-info p {
+  margin: 8px 0;
+
+  font-size: 15px;
+
+  color: #666;
+}
+
+
+/* =========================
+   PRICE
+========================= */
+
+.place-price {
+  align-self: flex-end;
+
+  margin-top: 20px;
+
+  font-size: 15px;
+}
+
+.place-price strong {
+  font-size: 18px;
+  color: #222;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 700px) {
+
+  .search-summary {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .place-card {
+    flex-direction: column;
+  }
+
+  .place-image {
+    width: 100%;
+    height: 230px;
+  }
+
+  .place-info {
+    min-height: 180px;
+  }
+
+}
+

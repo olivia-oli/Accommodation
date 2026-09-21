@@ -1,0 +1,23 @@
+.Action-Section{
+    display: flex;
+    height: 45vh;
+    justify-items: center;
+}
+
+.Action{
+    background-color: #000;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.h1{
+    font-size: 36px;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.Abutton{
+    position: absolute;
+    left: 0px;
+    padding: 50px;
+}
